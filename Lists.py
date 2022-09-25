@@ -13,7 +13,7 @@
 # li.insert(0, 3)     #(index, element)
 # li.append(9)        # element will automatically append at last index
 # li.insert(9, "santa")  # here 9th index is not present so "santa" will append automatically at end
-# li.extend([2,3,4])     # it will insert all three elements in list as different entity
+# li.extend([2,3,4])     # it will insert all three elements in list as different entities
 # print(li)   # [3, 1, 2.4, 'john', 9, 'santa', 2, 3, 4]
 
 # # removing elements from list

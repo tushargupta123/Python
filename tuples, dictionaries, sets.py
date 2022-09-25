@@ -108,7 +108,7 @@ a = {1:2, 3:4, "list":[1,23], "dict": {1: 1, 2:4} , 1:25}
 
 # SETS
 
-# a = {"apple","abc",23,2.3}      # it can store only int,str,float
+# a = {"apple","abc",23,2.3}      # set is itself a mutable but it can store only immutable items like int,str,float,complex,tuples
 # # we cant access these elements simply
 # # set doesnot stores duplicate entries , if there are any duplicate entry it will not print it also
 
