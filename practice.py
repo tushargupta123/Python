@@ -1,7 +1,8 @@
-a=int(input("Enter the number: "))
-if a%2:
-    print("Odd")
-else:
-    print("Even")
-
+import matplotlib.pyplot as plt
+import pandas as pd
+data=pd.read_csv("Book1.csv")
+print(data)
+df=pd.DataFrame(data)
+df.plot(kind="line",color=["red","yellow"],x="name")
+plt.show()
 
