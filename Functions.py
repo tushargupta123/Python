@@ -60,3 +60,15 @@
 
 # def f1(a=0,b,c):     #we cannot do this as default variables should always come at end 
 #     return a + b + c
+
+
+
+# Filter , map , reduce
+
+from functools import reduce
+
+nums = [2,4,5,7,8,9,10,11,12,]
+evens = list(filter(lambda x: x%2==0, nums))        # filter(function, iterable) => it will find the elements which will fulfill the condition. => it gives an object
+doubles = list(map(lambda x: x*2, evens))           # map(function, iterable) => it will pick element from iterables and then apply function on it. => it gives an object
+sum = reduce(lambda a,b: a+b,evens)                 # reduce(function, iterable) => it will take all elements from iterable and then apply function as a whole on it. => it gives int as answer
+print(evens,doubles,sum)
