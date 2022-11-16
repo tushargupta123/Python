@@ -1,3 +1,6 @@
+# python is a interpreter language as its code gets executed line by line and compiler based languages gets compiled at once and then they are executed.
+
+
 print("hello")
 a = 10
 b = 20

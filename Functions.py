@@ -67,8 +67,38 @@
 
 from functools import reduce
 
-nums = [2,4,5,7,8,9,10,11,12,]
+nums = [2,4,5,7,8,9,10,11,12]
 evens = list(filter(lambda x: x%2==0, nums))        # filter(function, iterable) => it will find the elements which will fulfill the condition. => it gives an object
 doubles = list(map(lambda x: x*2, evens))           # map(function, iterable) => it will pick element from iterables and then apply function on it. => it gives an object
 sum = reduce(lambda a,b: a+b,evens)                 # reduce(function, iterable) => it will take all elements from iterable and then apply function as a whole on it. => it gives int as answer
 print(evens,doubles,sum)
+
+
+
+# Types of arguments in functions
+
+# 1. Multiple arguments
+def func1(name,message):
+    print('hi',name,message)
+func1('ajay','welcome')
+
+# 2. Default argument
+def func2(name,message="welcome"):
+    print("hi",name,message)
+func2('ajay')               # hi ajay welcome
+func2('ajay','thank you')   # hi ajay thank you
+# default argument should always come at end
+
+# 3. keyword argument
+def func3(name,message):
+    print("hi",name,message)
+func3(name="ajay",message="welcome")
+# func3(name="ajay",'welcome')        # ERROR - keyword argument should come at end
+
+# 4. Arbitrary argument
+def func4(*names):
+    for name in names:
+        print(name)
+func4("ajay","tushar","dj","akg")
+
+
