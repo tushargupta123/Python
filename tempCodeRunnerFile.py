@@ -1,2 +1,2 @@
-")
-# f1.write("something") 
+
+# os.makedirs("/new/file")    # t
