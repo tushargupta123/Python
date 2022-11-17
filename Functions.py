@@ -74,6 +74,42 @@ sum = reduce(lambda a,b: a+b,evens)                 # reduce(function, iterable)
 print(evens,doubles,sum)
 
 
+# find palindrome using filter
+myStrings = ("demigod", "rewire", "madam", "fortran", "python", "xamarin", "salas", "PHP")
+palindromes = list(filter(lambda word: word == word[::-1], myStrings))
+print(palindromes)
+
+
+# Use map to print the square of each numbers rounded
+numbers = [2,4,7,9,10]
+square = list(map(lambda x:x**2, numbers))
+print("square of numbers are:",square)
+
+# Use filter to print only the names that are less than or equal to seven letters
+my_names = ["olumide", "akinremi", "josiah", "temidayo", "omoseun"]
+name = list(filter(lambda x:len(x)>=7, my_names))
+print("names are:",name)
+
+# Use reduce to print the product of these numbers
+my_numbers = [4, 6, 9, 23, 5]
+product = reduce(lambda x,y:x*y , my_numbers)
+print("product is:",product)
+
+# Write a Python program to add three given lists using Python map and lambda
+l1 = [12,23,4,5,6]
+l2 = [32,5,54,465,3]
+l3 = [243,4,3,3,12]
+add = list(map(lambda x,y,z:x+y+z, l1,l2,l3))
+print("add is :",add)
+
+# Write a Python program to listify the list of given strings individually using Python map.
+color = ['Red', 'Blue', 'Black', 'White', 'Pink']
+lt = list(map(list,color))
+print("lt is :",lt)
+
+
+
+
 
 # Types of arguments in functions
 

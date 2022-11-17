@@ -220,7 +220,7 @@ print('\nExample 4:', s)                # Example 4: 23:54:25
 
 time_data = ["25/05/99 02:35:8.023", "26/05/99 12:45:0.003", "27/05/99 07:35:5.523", "28/05/99 05:15:55.523"]
 
-format_data = "%d/%m/%y %H:%M:%S.%f"
+format_data = "%d/%m/%y %H:%M:%S.%f"    # it is the format in which the data is given and the format in which we want data
   
 for i in time_data:
     print(datetime.strptime(i, format_data))
@@ -228,3 +228,20 @@ for i in time_data:
 # 1999-05-26 12:45:00.003000
 # 1999-05-27 07:35:05.523000
 # 1999-05-28 05:15:55.523000
+
+
+# practice
+
+current = datetime.now()
+print(current)
+print(current.year)
+print(current.month)
+print(current.weekday())
+print(current.day)
+print(current.strftime("%j"))       # current day of the year
+
+str = "Jan 1 2014 2:43 PM"
+print(datetime.strptime(str,"%b %d %Y %I:%M %p"))
+
+subtract_5_days = current - timedelta(days=5)
+print(subtract_5_days)

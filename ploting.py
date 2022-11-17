@@ -83,3 +83,13 @@ plt.show()
 df = pd.DataFrame({"h":heigth})
 df.plot(kind="box",title="Box comparison")
 plt.show()
+
+
+
+
+# from CSV files
+data=pd.read_csv("Book1.csv")
+df=pd.DataFrame(data)
+df.plot(kind="line",color=["red","yellow"],x="name")
+plt.show()
+
