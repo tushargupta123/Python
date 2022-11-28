@@ -138,3 +138,30 @@ def func4(*names):
 func4("ajay","tushar","dj","akg")
 
 
+
+
+# docstring
+
+def func():
+    """This functions print defination of docstring"""
+    print("Python documentation strings (or docstrings) provide a convenient way of associating documentation with Python modules, functions, classes, and methods.It's specified in source code that is used, like a comment, to document a specific segment of code. Unlike conventional source code comments, the docstring should describe what the function does, not how.")
+
+print(func.__doc__)
+
+
+
+
+
+# non local variable
+# Python nonlocal keyword is used to reference a variable in the nearest scope. 
+# The nonlocal keyword won’t work on local or global variables and therefore must be used to reference variables in another scope except the global and local one. The nonlocal keyword is used in nested functions to reference a variable in the parent function. 
+def func5():
+    x=1
+    def func6():
+        nonlocal x
+        x=2
+        print(x)
+    print(x)
+    func6()
+    print(x)
+func5()
